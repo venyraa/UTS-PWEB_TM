@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Our Product</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+  <nav class="p-4 bg-white shadow flex items-center">
+    <a href="fragrance-beauty.html" class="text-sm text-gray-600 hover:text-black">&larr; Back</a>
+  </nav>
+
+  <!-- Hero Title -->
+  <div class="text-center py-8">
+    <p class="text-gray-500 tracking-widest text-sm">MAKEUP</p>
+  </div>
+
+  <!-- Product Detail Section -->
+  <section class="flex flex-col md:flex-row items-start md:items-center gap-8 px-6 md:px-12 pb-16 max-w-7xl mx-auto">
+    <!-- Product Image -->
+    <div class="w-full md:w-1/2">
+      <img id="product-image" src="asset/cushion2.jpg" alt="Dior Cushion"
+        class="rounded-lg shadow-lg w-full max-h-[450px] object-cover object-center">
+    </div>
+
+    <!-- Product Info -->
+    <div class="w-full md:w-1/2">
+      <p class="text-xs text-gray-500 uppercase mb-2">MAKEUP</p>
+      <h2 class="text-3xl font-bold mb-4 leading-snug">Dior Forever Cushion - Hydra Glow</h2>
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        Cushion Foundation Refill - 24-hour Perfection and Glow - 48-hour Hydration
+      </p>
+
+      <!-- Dropdown -->
+      <label for="product-variant" class="block text-gray-600 mb-2">Pilih Varian:</label>
+      <select id="product-variant"
+        class="border border-gray-300 rounded-lg p-3 mb-6 w-full focus:ring-2 focus:ring-black focus:outline-none">
+        <option value="Pink Cannage - 0 N Neutral">Pink Cannage - 0 N Neutral</option>
+        <option value="Embroidered Cannage - 0,5 N Neutral">Embroidered Cannage - 0,5 N Neutral</option>
+        <option value="Glossy Cannage - 1 N Neutral">Glossy Cannage - 1 N Neutral</option>
+      </select>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('product-variant').addEventListener('change', function () {
+      var selectedVariant = this.value;
+      var productImage = document.getElementById('product-image');
+
+      if (selectedVariant === 'Pink Cannage - 0 N Neutral') {
+        productImage.src = 'asset/Cushion1.jpg';
+      } else if (selectedVariant === 'Embroidered Cannage - 0,5 N Neutral') {
+        productImage.src = 'asset/embroidered.jpg';
+      } else if (selectedVariant === 'Glossy Cannage - 1 N Neutral') {
+        productImage.src = 'asset/glossy.jpg';
+      }
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-300 mt-16 pt-8 pb-4 px-6 text-base text-gray-800">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+
+      <!-- Client Services -->
+      <div>
+        <h3 class="font-bold mb-4 text-lg">CLIENT SERVICES</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">Contact Parfums Christian Dior</a></li>
+          <li><a href="#" class="hover:underline">Delivery & Returns</a></li>
+          <li><a href="#" class="hover:underline">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Find a Boutique -->
+      <div>
+        <h3 class="font-bold mb-4 text-lg">FIND A BOUTIQUE</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">Parfums Christian Dior Boutiques</a></li>
+          <li><a href="#" class="hover:underline">Christian Dior Couture Boutiques</a></li>
+        </ul>
+      </div>
+
+      <!-- The House of Dior -->
+      <div>
+        <h3 class="font-bold mb-4 text-lg">THE HOUSE OF DIOR</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">Legal Terms and Conditions</a></li>
+          <li><a href="#" class="hover:underline">Dior Beauty Privé</a></li>
+          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+          <li><a href="#" class="hover:underline">Cookies Policy</a></li>
+          <li><a href="#" class="hover:underline">Careers</a></li>
+        </ul>
+      </div>
+
+      <!-- Social & Store -->
+      <div>
+        <div class="mb-4">
+          <a href="#" class="flex items-center space-x-2 hover:underline">
+            <img src="asset/icon_maps.png" alt="Search" class="w-10 h-10" />
+            <span>Find a store</span>
+          </a>
+        </div>
+        <p class="mb-2">Follow us:</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="https://www.instagram.com/dior/" target="_blank">
+            <img src="asset/icon_fb.png" alt="Instagram" class="w-10 h-10 hover:opacity-75">
+          </a>
+          <a href="https://www.tiktok.com/@dior" target="_blank">
+            <img src="asset/tiktok-logo-icon-psd-editable.png" alt="TikTok" class="w-10 h-10 hover:opacity-75">
+          </a>
+          <a href="https://twitter.com/Dior" target="_blank">
+            <img src="asset/logo X.jpg" alt="Twitter" class="w-10 h-10 hover:opacity-75">
+          </a>
+          <a href="https://www.facebook.com/Dior" target="_blank">
+            <img src="asset/icon ig.png" alt="Facebook" class="w-10 h-10 hover:opacity-75">
+          </a>
+          <a href="https://www.snapchat.com/add/dior" target="_blank">
+            <img src="asset/snapchat-removebg-preview.png" alt="Snapchat" class="w-10 h-10 hover:opacity-75">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-10 border-t border-gray-300 pt-4">
+      <p class="font-bold text-2xl mb-2">DIOR</p>
+      <div class="flex flex-wrap justify-center space-x-6 text-sm">
+        <a href="#" class="hover:underline">Privacy Policy</a>
+        <a href="#" class="hover:underline">Terms and Conditions</a>
+        <a href="#" class="hover:underline">Cookies Policy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
